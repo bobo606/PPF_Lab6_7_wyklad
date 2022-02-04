@@ -1,0 +1,66 @@
+.Kontent {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Kontent img {
+  width: 100%;
+}
+.Kontent p {
+  width: 100%;
+  margin-top: 20px;
+}
+
+h2 {
+  padding: 15px;
+}
+
+.Rasa1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+.Rasa2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+.Rasa3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .Kontent {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "rasa1 rasa2"
+      "rasa3 rasa3";
+  }
+  .Rasa1 {
+    grid-area: rasa1;
+  }
+  .Rasa2 {
+    grid-area: rasa2;
+  }
+  .Rasa3 {
+    grid-area: rasa3;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Kontent {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "rasa1"
+      "rasa2"
+      "rasa3";
+  }
+}

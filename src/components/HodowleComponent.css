@@ -1,0 +1,22 @@
+.KontentHodowle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lewyPanel {
+  padding: 15px;
+}
+.lewyPanel ul li {
+  display: list-item;
+  padding: 5px;
+}
+
+.prawyPanel {
+  padding: 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .KontentHodowle {
+    grid-template-columns: 1fr;
+  }
+}

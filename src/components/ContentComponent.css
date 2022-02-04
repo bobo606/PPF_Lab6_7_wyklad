@@ -1,0 +1,30 @@
+.zdjecia_kotow1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.zdjecia_kotow1 img {
+  width: 90%;
+  border: 10px solid transparent;
+  padding: 15px;
+}
+
+h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #kot3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .zdjecia_kotow1 {
+    display: flex;
+    flex-direction: column;
+  }
+  #kot3 {
+    display: block;
+  }
+}
